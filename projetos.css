@@ -122,3 +122,60 @@ footer p {
   margin: 0;
   font-size: 13px;
 }
+
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .secao1 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .logo-unifebe,
+  .logo-meninas {
+    width: 200px;
+  }
+
+  .secaodireita {
+    margin-top: 2vh;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  nav img {
+    height: 45px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card > img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

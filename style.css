@@ -90,3 +90,63 @@ footer {
   padding: 15px 0; /* Espaço interno */
   margin-top: 30px; /* Espaço acima */
 }
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  nav img {
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin-left: 0;
+  }
+
+  #banner {
+    padding: 20px 4px;
+    font-size: 1em;
+  }
+
+  #descricao,
+  .secao-dados {
+    max-width: 98vw;
+    padding: 12px 4px;
+    margin: 16px auto;
+  }
+
+  #banner h1 {
+    font-size: 1.3rem;
+  }
+
+  .dado {
+    font-size: 0.98em;
+    padding: 8px;
+  }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+  nav img {
+    height: 32px;
+  }
+
+  #banner h1,
+  #descricao h3,
+  .secao-dados h1 {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.95em;
+    padding: 10px 2px;
+  }
+}
+

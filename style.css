@@ -1,146 +1,91 @@
-/* Reset básico */
+/* Remove margens e espaçamentos padrão dos elementos */
 * {
-  margin: 0; /* Remove margens padrão de todos os elementos */
-  padding: 0; /* Remove espaçamentos internos padrão */
-  box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total */
+  margin: 0;
+  padding: 0;
 }
 
-/* Corpo */
+/* Define o fundo da página e a fonte usada */
 body {
-  background: #f5f5fa; /* Cor de fundo suave */
-  font-family: 'Segoe UI', Arial, Helvetica, sans-serif; /* Fonte principal */
-  color: #222; /* Cor do texto padrão */
-  min-height: 100vh; /* Garante altura mínima de tela cheia */
+  background: #f5f5fa;
+  font-family: Arial, sans-serif;
+  color: #222;
 }
 
-/* Header e navegação */
+/* Cabeçalho da página */
 header {
-  background: #333; /* Fundo escuro para o cabeçalho */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Sombra sutil abaixo do header */
+  background: #333; /* Cor de fundo escura */
 }
 
+/* Menu de navegação */
 nav {
-  display: flex; /* Layout flexível para alinhar itens na horizontal */
-  align-items: center; /* Centraliza verticalmente os itens */
-  gap: 32px; /* Espaço entre os itens do nav */
-  padding: 18px 50px; /* Espaçamento interno do nav */
-  max-width: 1200px; /* Largura máxima do nav */
-  margin: 0 auto; /* Centraliza o nav na página */
+  display: flex; /* Deixa os itens lado a lado */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px 20px; /* Espaço interno */
+  gap: 15px; /* Espaço entre os itens */
 }
 
+/* Logo do site */
 nav img {
-  height: 60px; /* Altura do logo */
-  border-radius: 14px; /* Bordas arredondadas no logo */
-  transition: box-shadow 0.3s; /* Transição suave para sombra ao passar o mouse */
+  height: 50px; /* Altura da imagem */
+  border-radius: 5%;
 }
 
-nav img:hover {
-  box-shadow: 0 4px 16px rgba(109,9,208,0.15); /* Sombra roxa ao passar o mouse */
-}
-
+/* Links do menu */
 nav a {
-  color: #fff; /* Cor do texto dos links */
-  text-decoration: none; /* Remove sublinhado dos links */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-size: 1.1rem; /* Tamanho da fonte dos links */
-  letter-spacing: 0.5px; /* Espaçamento entre letras */
-  padding-bottom: 2px; /* Espaço abaixo do texto */
-  border-bottom: 2px solid transparent; /* Linha inferior invisível para efeito hover */
-  transition: color 0.3s, border-bottom 0.3s; /* Transição suave de cor e borda */
-}
-
-nav a:hover {
-  color: #ffd700; /* Cor dourada ao passar o mouse */
-  border-bottom: 2px solid #ffd700; /* Linha inferior dourada ao passar o mouse */
-}
-
-/* Banner/Seção inicial */
-#banner {
-  background: linear-gradient(90deg, #1d4f91 70%, #6d09d0 100%); /* Degradê azul/roxo */
-  color: #fff; /* Texto branco */
-  padding: 40px 0 24px 0; /* Espaçamento interno */
-  text-align: center; /* Centraliza o texto */
-}
-
-#banner h1 {
-  font-size: 2.2rem; /* Tamanho grande para o título */
-  margin-bottom: 18px; /* Espaço abaixo do título */
-  letter-spacing: 1px; /* Espaçamento entre letras */
-  text-transform: uppercase; /* Letras maiúsculas */
-}
-
-#banner p {
-  font-size: 1.1rem; /* Tamanho da fonte dos parágrafos */
-  margin-bottom: 8px; /* Espaço abaixo dos parágrafos */
-}
-
-/* Seção Quem Somos */
-#descricao {
-  max-width: 800px; /* Largura máxima da seção */
-  margin: 36px auto 0 auto; /* Centraliza e adiciona espaço acima */
-  background: #fff; /* Fundo branco */
-  border-radius: 14px; /* Bordas arredondadas */
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06); /* Sombra suave */
-  padding: 32px 28px; /* Espaçamento interno */
-}
-
-#descricao h3 {
-  color: #6d09d0; /* Cor roxa para o título */
-  font-size: 1.5rem; /* Tamanho do título */
-  margin-bottom: 18px; /* Espaço abaixo do título */
-  text-align: center; /* Centraliza o texto */
-  text-transform: uppercase; /* Letras maiúsculas */
-  letter-spacing: 1px; /* Espaçamento entre letras */
-}
-
-#descricao p {
-  font-size: 1.08rem; /* Tamanho da fonte */
-  line-height: 1.7; /* Espaçamento entre linhas */
-  text-align: justify; /* Justifica o texto */
-}
-
-/* Seção Dados */
-.secao-dados {
-  max-width: 900px; /* Largura máxima */
-  margin: 40px auto; /* Centraliza e adiciona espaço acima/abaixo */
-  background: #fff; /* Fundo branco */
-  border-radius: 14px; /* Bordas arredondadas */
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06); /* Sombra suave */
-  padding: 32px 28px; /* Espaçamento interno */
-}
-
-.secao-dados h1 {
-  color: #1d4f91; /* Cor azul para o título */
-  font-size: 1.5rem; /* Tamanho do título */
-  margin-bottom: 24px; /* Espaço abaixo do título */
-  text-align: center; /* Centraliza o texto */
-  text-transform: uppercase; /* Letras maiúsculas */
-  letter-spacing: 1px; /* Espaçamento entre letras */
-}
-
-.dado {
-  background: #e6e6fa; /* Fundo lilás claro */
-  border-left: 5px solid #6d09d0; /* Barra lateral roxa */
-  padding: 18px 18px 12px 18px; /* Espaçamento interno */
-  margin-bottom: 18px; /* Espaço abaixo do bloco */
-  border-radius: 8px; /* Bordas arredondadas */
-  font-size: 1.08rem; /* Tamanho da fonte */
-  color: #222; /* Cor do texto */
-}
-
-.dado a {
-  color: #1d4f91; /* Cor azul para links */
-  text-decoration: underline; /* Sublinhado */
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Sem sublinhado */
   font-weight: bold; /* Negrito */
 }
 
-.dado a:hover {
-  color: #6d09d0; /* Cor roxa ao passar o mouse */
+/* Destaque ao passar o mouse nos links */
+nav a:hover {
+  color: #ffd700; /* Fica dourado ao passar o mouse */
+}
+
+/* Seção de destaque inicial */
+#banner {
+  background: #1d4f91; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 30px 0; /* Espaço interno */
+}
+
+/* Título principal */
+#banner h1 {
+  font-size: 2rem; /* Tamanho grande */
+  margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Seção "Quem somos" */
+#descricao {
+  background: #fff; /* Fundo branco */
+  max-width: 700px; /* Largura máxima */
+  margin: 30px auto; /* Centraliza na tela */
+  padding: 20px; /* Espaço interno */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Seção de dados */
+.secao-dados {
+  background: #fff;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Blocos de dados */
+.dado {
+  background: #e6e6fa; /* Fundo lilás claro */
+  margin-bottom: 15px; /* Espaço abaixo */
+  padding: 10px; /* Espaço interno */
+  border-left: 4px solid #6d09d0; /* Barra lateral roxa */
 }
 
 /* Rodapé */
 footer {
   background: #333; /* Fundo escuro */
+<<<<<<< HEAD
   color: #e0e0e0; /* Texto claro */
   text-align: center; /* Centraliza o texto */
   padding: 28px 0 18px 0; /* Espaçamento interno */
@@ -170,3 +115,70 @@ footer b {
     padding: 28px 0 16px 0; /* Reduz o padding do banner */
   }
 }
+=======
+  color: #fff; /* Texto claro */
+  text-align: center; /* Centraliza o texto */
+  padding: 15px 0; /* Espaço interno */
+  margin-top: 30px; /* Espaço acima */
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  nav img {
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin-left: 0;
+  }
+
+  #banner {
+    padding: 20px 4px;
+    font-size: 1em;
+  }
+
+  #descricao,
+  .secao-dados {
+    max-width: 98vw;
+    padding: 12px 4px;
+    margin: 16px auto;
+  }
+
+  #banner h1 {
+    font-size: 1.3rem;
+  }
+
+  .dado {
+    font-size: 0.98em;
+    padding: 8px;
+  }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+  nav img {
+    height: 32px;
+  }
+
+  #banner h1,
+  #descricao h3,
+  .secao-dados h1 {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.95em;
+    padding: 10px 2px;
+  }
+}
+
+>>>>>>> 97cc21c6138a79dc0156ea78b6fd7e83414f6ae5

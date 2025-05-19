@@ -1,73 +1,87 @@
-/* Remove margens e espaçamentos padrão dos elementos */
+/* Remove margens e espaçamento dos elementos */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-/* Define o fundo da página e a fonte usada */
+/* Define o fundo da página e a fonte usada no body*/
 body {
-  background: #f5f5fa;
+  background-color: #ededed;
   font-family: Arial, sans-serif;
   color: #222;
 }
 
-/* Cabeçalho da página */
-header {
-  background: #333; /* Cor de fundo escura */
-}
-
-/* Menu de navegação */
+/* Barra de navegação */
 nav {
-  display: flex; /* Deixa os itens lado a lado */
-  align-items: center; /* Centraliza verticalmente */
-  padding: 10px 20px; /* Espaço interno */
-  gap: 15px; /* Espaço entre os itens */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 130px 10px 0px; /* permite que a barra de navegação fique centralizada mesmo com a diferença de tamanho da logo */
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 350px; /* espaço entre a logo e o links */
 }
 
-/* Logo do site */
+.logo {
+  padding: 10px 0px;
+}
+
 nav img {
-  height: 50px; /* Altura da imagem */
-  border-radius: 5%;
+  height: 60px;
 }
 
-/* Links do menu */
 nav a {
-  color: white; /* Cor do texto */
-  text-decoration: none; /* Sem sublinhado */
-  font-weight: bold; /* Negrito */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: color 0.3s;
 }
 
-/* Destaque ao passar o mouse nos links */
 nav a:hover {
-  color: #ffd700; /* Fica dourado ao passar o mouse */
+  color: #ccc;
 }
+
 
 /* Seção de destaque inicial */
 #banner {
-  background: #1d4f91; /* Fundo azul */
-  color: #fff; /* Texto branco */
+  background-color: #1d4f91; /* Cor do fundo */
+  color: #fff; /* Cor do texto */
   text-align: center; /* Centraliza o texto */
-  padding: 30px 0; /* Espaço interno */
+  padding: 30px; /* Espaço interno */
 }
 
-/* Título principal */
+/* Título principal do banner*/
 #banner h1 {
   font-size: 2rem; /* Tamanho grande */
-  margin-bottom: 10px; /* Espaço abaixo */
+  margin-bottom: 10px; /* Espaçamento abaixo */
 }
 
 /* Seção "Quem somos" */
 #descricao {
-  background: #fff; /* Fundo branco */
+  background-color: #fff;
   max-width: 700px; /* Largura máxima */
   margin: 30px auto; /* Centraliza na tela */
   padding: 20px; /* Espaço interno */
   border-radius: 10px; /* Bordas arredondadas */
 }
 
+.text {
+  padding: 8px;
+}
+
+#descricao1 {
+  padding: 12px;
+  justify-items: center;
+}
+
 /* Seção de dados */
 .secao-dados {
-  background: #fff;
+  background-color: #fff;
   max-width: 700px;
   margin: 30px auto;
   padding: 20px;
@@ -76,51 +90,35 @@ nav a:hover {
 
 /* Blocos de dados */
 .dado {
-  background: #e6e6fa; /* Fundo lilás claro */
-  margin-bottom: 15px; /* Espaço abaixo */
-  padding: 10px; /* Espaço interno */
+  background-color: #e6e6fa;
+  margin-bottom: 15px; /* Margem abaixo */
+  padding: 15px; /* Espaço interno */
   border-left: 4px solid #6d09d0; /* Barra lateral roxa */
 }
 
 /* Rodapé */
 footer {
-  background: #333; /* Fundo escuro */
-<<<<<<< HEAD
-  color: #e0e0e0; /* Texto claro */
-  text-align: center; /* Centraliza o texto */
-  padding: 28px 0 18px 0; /* Espaçamento interno */
-  margin-top: 40px; /* Espaço acima do rodapé */
-  font-size: 1rem; /* Tamanho da fonte */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  position: static;
+  margin-top: 20px;
+}
+
+.footer-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 footer p {
-  margin-bottom: 8px; /* Espaço abaixo dos parágrafos */
+  margin: 0;
+  font-size: 11px;
+  padding: 3px;
 }
 
-footer b {
-  color: #ffd700; /* Cor dourada para textos em negrito */
-}
-
-/* Responsividade */
-@media (max-width: 800px) {
-  nav {
-    flex-direction: column; /* Empilha os itens do nav verticalmente */
-    gap: 12px; /* Reduz o espaço entre os itens */
-    padding: 18px 10px; /* Reduz o padding lateral */
-  }
-  #descricao, .secao-dados {
-    padding: 18px 8px; /* Reduz o padding interno das seções */
-  }
-  #banner {
-    padding: 28px 0 16px 0; /* Reduz o padding do banner */
-  }
-}
-=======
-  color: #fff; /* Texto claro */
-  text-align: center; /* Centraliza o texto */
-  padding: 15px 0; /* Espaço interno */
-  margin-top: 30px; /* Espaço acima */
-}
 
 /* Responsividade para tablets e celulares */
 @media (max-width: 768px) {
@@ -181,4 +179,3 @@ footer b {
   }
 }
 
->>>>>>> 97cc21c6138a79dc0156ea78b6fd7e83414f6ae5

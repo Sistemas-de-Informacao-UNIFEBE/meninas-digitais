@@ -17,7 +17,7 @@ body {
 /* Barra de navegação */
 nav {
   width: 100%;
-  background-color: #333;
+  background-color: #ededed;
   color: white;
   padding: 10px 130px 10px 0px;
   /* permite que a barra de navegação fique centralizada mesmo com a diferença de tamanho da logo */
@@ -36,7 +36,7 @@ nav img {
 
 /* Links da barra de navegação */
 nav a {
-  color: white;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
   margin-left: 10px;
@@ -45,7 +45,7 @@ nav a {
 
 /* Mudança dos links quando passa o mouse */
 nav a:hover {
-  color: #ccc;
+  color: #fff8f8;
 }
 
 
@@ -66,9 +66,9 @@ a {
   text-decoration: none;
 }
 
-.logo-unifebe,
-.logo-meninas {
-  width: 300px;
+.logo-unifebe{ width: 300px;
+}
+.logo-meninas { width: 280px ;height: 150px ;
 }
 
 .secaodireita {
@@ -96,6 +96,7 @@ a {
 /* Adicionando espaçamento interno diferenciado para a descrição */
 #descricao1 {
   padding: 12px;
+  text-align: justify; /*Texto justificado do título que nós somos*/
 }
 
 /* Seção de dados */
@@ -126,7 +127,7 @@ a {
 /* Rodapé */
 footer {
   width: 100%;
-  background-color: #333;
+  background-color: #1d4f91;
   color: white;
   padding: 15px 0;
   text-align: center;

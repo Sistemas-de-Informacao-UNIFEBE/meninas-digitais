@@ -69,7 +69,7 @@ a {
 .logo-unifebe{ width: 300px;
 }
 .logo-meninas { width: 280px ;height: 150px ;
-} /*ajuste no logo e no tamanho da imagem*/
+} 
 
 .secaodireita {
   margin: 5vh 0vh 0vh 0vh;
@@ -186,7 +186,6 @@ footer p {
   nav {
     flex-direction: row;
     max-width: 100%;
-    flex-wrap: wrap;
     max-height: 30%;
     gap: 20px;
     /* Reduzido para evitar bugs */

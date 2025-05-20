@@ -17,7 +17,7 @@ body {
 /* Barra de navegação */
 nav {
   width: 100%;
-  background-color: #ededed;
+  background-color: #ededed; /* ajuste na cor de fundo do nav*/
   color: white;
   padding: 10px 130px 10px 0px;
   /* permite que a barra de navegação fique centralizada mesmo com a diferença de tamanho da logo */
@@ -36,7 +36,7 @@ nav img {
 
 /* Links da barra de navegação */
 nav a {
-  color: #333;
+  color: #333; 
   text-decoration: none;
   font-weight: bold;
   margin-left: 10px;
@@ -45,7 +45,7 @@ nav a {
 
 /* Mudança dos links quando passa o mouse */
 nav a:hover {
-  color: #fff8f8;
+  color: #fff8f8; /*Ajuste na cor do a:hover */
 }
 
 
@@ -69,7 +69,7 @@ a {
 .logo-unifebe{ width: 300px;
 }
 .logo-meninas { width: 280px ;height: 150px ;
-}
+} /*ajuste no logo e no tamanho da imagem*/
 
 .secaodireita {
   margin: 5vh 0vh 0vh 0vh;

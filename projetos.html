@@ -1,52 +1,37 @@
-<!DOCTYPE html> <!--Página 2 dos projetos das meninas digitais-->
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meninas Digitais</title>
-    <link rel="stylesheet" href="projetos.css">
-</head> <!--Estrutura interna da página-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"rel="stylesheet">
+</head>
 
 <body>
-
-    <header>
+    <header> <!-- barra de navegação -->
         <nav>
-            <img src="assets/images/Meninasdigitaissemfundos.png" alt="Logo do projetos Meninas digitais" width="180px">
-            <!--Logo das meninas digitais-->
-
-            <a href="index.html">Home</a>
-            <a href="projetos.html">Projetos</a>
-        </nav> <!--Barra de navegação-->
+            <div class="nav-logo">
+                <img src="assets/images/Logo variação 1 - Horizontal.png" alt="Logo" width="180px" id="logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a> <!-- link para navegar entre as páginas -->
+                <a href="projetos.html">Projetos</a> <!-- link para navegar entre as páginas -->
+            </div>
+        </nav>
     </header>
 
     <main> <!--Informações e conteúdos dos projetos: meninas digitais-->
-
-        <section class="secao1"> <!--Seção com os dados das meninas digitais-->
-
-            <div class="secaodireita"> <!--Dados-->
-                <img class="logo-unifebe" src="./assets/images/unifebe-logo-horizontal.webp"
-                    alt="Logo unifebe do projeto Meninas digitais">
-
-                <p class="text"><b>Instituição: </b> UNIFEBE (Centro Universitário de Brusque)</p>
-                <p class="text"><b>E-mail: </b> <a
-                        href="mailto: meninasdigitais@unifebe.edu.br">meninasdigitais@unifebe.edu.br</a>
-                </p>
-                <p class="text"><b>Status: </b> Ativo</p>
-                <p class="text"><b>Início: </b> 2023</p>
-            </div>
-
-            <img class="logo-meninas" src="./assets/images/Meninasdigitais-embranco.semfundos.png" alt="Meninas Digitais Logo" />
-            <!--Logo das meninas digitais-->
-
-        </section>
-
         <section class="secao2">
             <!--Seção dos projetos das meninas digitais exibidos nos cards (que são espaços retangulares com algum conteúdo)-->
 
             <div class="card"> <!--Card 1-->
-                <img src="./assets/images/projeto1.webp" alt="Divas digitais">
-                <p>DIVAS digitais</p>
+                <a href="https://docs.google.com/document/d/18tXFS8uUQjWQmouTA1sM10IQ89ePTDNR/edit?usp=sharing&ouid=113423399063261958364&rtpof=true&sd=true"><img src="./assets/images/foto-barreiras.png" alt="Divas digitais"></a>
+                <p>Barreiras à Inclusão Feminina nas Áreas de TIC: Impactos da Síndrome do Impostor e Outras Desigualdades.</p>
             </div>
 
             <div class="card"> <!--Card 2-->
@@ -88,12 +73,15 @@
 
     </main>
 
-    <footer> <!--Rodapé da página das meninas digitais-->
-        <div class="footer-section">
-            <p>Mantido pelo projeto Meninas Digitais UNIFEBE. <b>E-mail: </b>
-                <a href="mailto:meninasdigitais@unifebe.edu.br">meninasdigitais@unifebe.edu.br</a>
-            </p>
-            <p>© 2025 Todos os direitos reservados</p>
+    <footer> <!--Rodapé da página das meninas digitais--><!-- banner inicial -->
+        <div class="footer-img">
+            <img src="./assets/images/Logo variação 6 - Vertical.png" alt="Logo unifebe do projeto Meninas digitais">
+        </div>
+        <div class="footer-text">
+            <p class="text"><b>Instituição: </b> Centro Universitário da Fundação Educacional de Brusque - UNIFEBE</p>
+            <p class="text"><b>E-mail: </b> <a href="mailto: meninasdigitais@unifebe.edu.br">meninasdigitais@unifebe.edu.br</a></p>
+            <img src="./assets/images/unifebe-logo-horizontal.webp" alt="Meninas Digitais Logo" />
+            <p>Meninas Digitais Unifebe © 2025 Todos os direitos reservados</p>
         </div>
     </footer>
 

@@ -1,9 +1,15 @@
+:root{
+  --azul-marinho:#004AAD;
+  --rosa-pink: #ef6f82;
+  --rosa-claro: #ffdee9;
+}
+
 /* Remove margens e espaçamento dos elementos da página */
 * {
   padding: 0;
   margin: 0;
-  border: 0;
-  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+
 }
 
 
@@ -84,19 +90,6 @@ a {
   margin: 5vh 0vh 0vh 0vh;
 }
 
-/* Seção "Quem somos" */
-#descricao {
-  background-color: #fff;
-  max-width: 700px;
-  /* Largura máxima */
-  margin: 30px auto;
-  /* Centraliza na tela */
-  padding: 20px;
-  /* Espaço interno */
-  border-radius: 10px;
-  /* Bordas arredondadas */
-}
-
 /* Adicionando espaçamento interno aos textos */
 .text {
   padding: 8px;
@@ -108,10 +101,16 @@ a {
   text-align: justify; /*Texto justificado do título que nós somos*/
 }
 
+.container-descricao{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 /* Seção de dados */
 .secao-dados {
   background-color: #fff;
-  max-width: 700px;
+  width: 45%;
   margin: 30px auto;
   padding: 20px;
   border-radius: 10px;
@@ -119,13 +118,14 @@ a {
 
 /* Blocos de dados */
 .dado {
-  background-color: #e6e6fa;
+  background-color: var(--rosa-claro);
   margin-bottom: 15px;
   /* Margem abaixo */
   padding: 15px;
-  border-left: 4px solid #6d09d0;
+  border-left: 4px solid var(--rosa-pink);
   /* Borda lateral roxa */
   color: #222;
+  margin: 0 0 20px 0;
 }
 
 /* Links presentes na seção de dados */
@@ -142,6 +142,9 @@ footer {
   text-align: center;
   position: static;
   margin-top: 20px;
+}
+
+.container-footer{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -225,42 +228,60 @@ a {
 }
 
 .card {
-  width: 20%;
-  height: auto;
+  width: 100%;
+  max-width: 320px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 0px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: transform 0.2s ease;
-}
-
-.card>img {
-  width: 100%;
-  height: 70%;
-  border-radius: 5px;
-}
-
-.card a img {
-  width: 100%;
-  height: 75%;
-  border-radius: 5px;
-}
-.card>p {
-  margin-top: 10px;
-  text-align: center;
-  color: #333;
-  font-family: "Red Hat Text", sans-serif;
-  font-weight: 500;
-  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  padding: 0 0 10px 0;
+}
+
+.card-titulo {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  line-height: 1.4;
+  margin: 15px;
+}
+
+.card-titulo p{
+  padding: 20px 0 20px 100px;
+}
+
+.card-dados {
+  padding: 0 1rem 1rem;
+  font-size: 0.875rem;
+  color: #333;
+  opacity: 95%;
+  font-size: 12px;
+}
+
+.container-mulheres{
+  background-color: var(--rosa-pink);
+}
+
+.titulo-mulheres{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 

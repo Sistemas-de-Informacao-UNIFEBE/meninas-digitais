@@ -136,58 +136,58 @@ a {
 /* Rodapé */
 footer {
   width: 100%;
-  background-color: #1d4f91;
   color: white;
-  padding: 15px 0;
   text-align: center;
-  position: static;
-  margin-top: 20px;
+  margin-top: 0;
+}
+.linha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 10px 0;
+}
+hr{
+  width: 95%;
+  color: #333;
 }
 
 .container-footer{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
 }
 
 .footer-img {
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  width: 20%;
 }
 
 .footer-img img {
-  width: 35%;
+  width: 100%;
   height: auto;
-  margin-right: 20px;
-  padding: 0 0 0 30px;
 } 
 
 .footer-text{
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  text-align: left;
+  flex-direction: row;
   align-items: center;
-
-
 }
 
 .footer-text p {
   font-size: 16px;
-  color: #f5f5f5; 
+  color: #333;
+  padding: 0 15px 0 15px;
+}
+.footer-text a {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
 }
 
-.footer-text img {
-  width: 150px;
-  height: auto;
-  margin-right: 20px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 11px;
-  padding: 3px;
+.footer-text img{
+  padding: 0 15px 0 15px;
 }
 
 
@@ -274,15 +274,115 @@ a {
   font-size: 12px;
 }
 
-.container-mulheres{
+/*mulheres inspiradoras*/
+.section-mulheres{
   background-color: var(--rosa-pink);
+  margin: 70px 0 0 0;
 }
 
 .titulo-mulheres{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  padding: 20px 0 20px 0;
+ color: var(--rosa-claro);
 }
+
+.titulo-mulheres h3{
+  font-size: 30px;
+  font-weight: 100;
+}
+.titulo-mulheres p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container-mulheres{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 0;
+}
+
+.card-mulheres{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--rosa-claro);
+  border-radius: 5px;
+  padding: 15px 0px 15px 0px;
+  margin: 20px 5px 20px 10px;
+  width: 250px; 
+  flex-shrink: 0;
+}
+
+.card-mulheres img{
+  border-radius: 100%;
+  width: 60%;
+  height: auto;
+}
+
+.card-mulheres-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+
+.card-mulheres-text p{
+  font-weight: 500;
+  color: var(--rosa-claro);
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 40s linear infinite;
+  width: max-content;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+.button a{
+  color: var(--rosa-pink);
+  background-color: var(--rosa-claro);
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+
+.button a:hover {
+  background-color: var(--rosa-pink);
+  color: var(--rosa-claro);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.card-mulheres {
+  width: 250px; 
+  flex-shrink: 0; 
+}
+
 
 
 /* Responsividade para tablets e celulares */
@@ -356,9 +456,7 @@ a {
     margin: 5px 0;
   }
 
-  footer {
-    padding: 15px 0;
-  }
+ 
 
   footer p {
     font-size: 12px;

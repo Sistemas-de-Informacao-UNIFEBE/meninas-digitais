@@ -19,7 +19,7 @@
     <!-- barra de navegação -->
     <nav>
       <div class="nav-logo">
-        <img src="assets/images/Logo variação 1 - Horizontal.png" alt="Logo" width="180px" id="logo" />
+        <img src="assets/images/logo_variação_1_horizontal.png" alt="Logo" width="180px" id="logo" />
       </div>
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -30,11 +30,21 @@
     </nav>
   </header>
 
-    <main> <!--Informações e conteúdos dos projetos: meninas digitais-->
+    <main>
+        <div class="projetos-filtro">
+            <img src="assets/images/filtro(2).png" alt="">
+            <select class="form-select" id="filtroAno">
+                <option selected></option>
+                <option value="2">2025</option>
+            </select>
+        </div>
+        <div class="titulo-mulheres2">
+            <h2>Projetos e Pesquisas realizadaos na instituição</h2>
+        </div>
+        </div> <!--Informações e conteúdos dos projetos: meninas digitais-->
         <section class="secao2">
             <!--Seção dos projetos das meninas digitais exibidos nos cards (que são espaços retangulares com algum conteúdo)-->
-
-            <div class="card"> <!--Card 1-->
+            <div class="card" data-ano="2"> <!--Card 1-->
                 <a href="https://www.even3.com.br/anais/increa-ciedus-eduque-532630/1096303-barreiras-a-inclusao-feminina-nas-areas-de-tic--impactos-da-sindrome-do-impostor-e-outras-desigualdades/"><img src="./assets/images/inrea.png" alt="Divas digitais"></a>
                 <p class="card-titulo">BARREIRAS À INCLUSÃO FEMININA NAS ÀREAS DE TIC: IMPACTOS DA SÍNDROME DO IMPOSTOR E OUTRAS DESIGUALDADES</p>
                 <div class="card-dados">
@@ -43,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="card"> <!--Card 1-->
+            <div class="card" data-ano="2"> <!--Card 1-->
                 <a href="https://www.even3.com.br/anais/increa-ciedus-eduque-532630/1096147-projeto-meninas-digitais-unifebe--promovendo-a-inclusao-feminina-na-tecnologia/"><img src="assets/images/increa2.png" alt="Divas digitais"></a>
                 <p class="card-titulo">PROJETO MENINAS DIGITAIS UNIFEBE: PROMOVENDO A INCLUSÃO FEMININA NA TECNOLOGIA</p>
                 <div class="card-dados">
@@ -51,8 +61,6 @@
                     Ano: 2025</p>
                 </div>
             </div>
-           
-
         </section>
 
     </main>
@@ -65,7 +73,7 @@
     <section class="container-footer">
       <!--Rodapé da página das meninas digitais--><!-- banner inicial -->
       <div class="footer-img">
-        <img src="./assets/images/Logo variação 2 - horizontal.png" alt="Logo unifebe do projeto Meninas digitais" />
+        <img src="./assets/images/logo_variação_1_horizontal.png" alt="Logo unifebe do projeto Meninas digitais" />
       </div>
       <div class="footer-text">
         <img src="assets/images/mail.svg" alt="mail">
@@ -75,7 +83,5 @@
     </section>
   </footer>
 </body>
-
-</body>
-
+<script src="script.js"></script>
 </html>

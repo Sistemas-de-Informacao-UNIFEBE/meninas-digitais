@@ -18,19 +18,24 @@ document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector('.hamburger');
   const nav_list = document.getElementById('mobile-menu');
 
-  hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('active');
-    nav_list.classList.toggle('active');
-  });
-
-  // Fecha o menu ao clicar em um link (mobile)
-  const nav_links = nav_list.querySelectorAll('a');
-  nav_links.forEach(link => {
-    link.addEventListener('click', function() {
-      if (window.innerWidth <= 768) {
-        hamburger.classList.remove('active');
-        nav_list.classList.remove('active');
-      }
+  if (hamburger && nav_list) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      nav_list.classList.toggle('active');
     });
-  });
+
+    // Fecha o menu ao clicar em um link (mobile)
+    const nav_links = nav_list.querySelectorAll('a');
+    nav_links.forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+          hamburger.classList.remove('active');
+          nav_list.classList.remove('active');
+        }
+      });
+    });
+  } else {
+    console.error("Elemento '.hamburger' ou '#mobile-menu' não encontrado!");
+  }
 });
+

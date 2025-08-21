@@ -52,18 +52,18 @@ justify-content: center;
   color: #1d4f91; 
   text-decoration: none;
   margin-left: 10px;
-  padding: 0 60px 0 20px;
+  padding: 0 20px 0 20px;
   transition: color 0.3s;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Red Hat Text", sans-serif;
 }
 
 /* Mudança dos links quando passa o mouse */
 nav a:hover {
-  color: #fff8f8; /*Ajuste na cor do a:hover */
+  color: #fff8f8; 
 }
 
-.nav-links-mobile{
+#mobile-menu{
   display: none;
 }
 
@@ -372,6 +372,7 @@ hr{
   font-size: 20px;
   border-radius: 5px;
   margin: 0 0 20px 0;
+  text-decoration: none;
 }
 
 .button a:hover {
@@ -489,27 +490,35 @@ hr{
     padding: 0;
   }
 
-  .nav-links {
-    display: none;
-  }
+
 
   .hamburger {
     display: flex;
   }
 
-  .nav-links {
-    display: none; /* escondido até clicar */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  }
+#desktop-menu{
+  display: none;
+}
 
-  .nav-links.active {
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  text-align: right;
+  top: 60px;
+  right: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+#mobile-menu a:hover{
+  background-color: #dcdcdc;
+  border-radius: 8px;
+}
+
+  #mobile-menu.active {
     display: flex;
   }
 
@@ -549,22 +558,37 @@ hr{
     width: 7%;
     margin: 10px 10px 0 0;
   }
-
+.titulo-mulheres2 p{
+  font-size: 50px;
+}
   /* Texto mulheres */
-  .texto-mulheres {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
+.subtitulo-mulheres{
+  display: flex;
+  justify-content: center;
+}
+.subtitulo-mulheres h3{
+  padding: 0;
+}
 
-  .texto-mulheres img {
-    width: 150px;
-    margin: 0 0 20px 0;
-  }
+.texto-mulheres{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0;
+}
 
-  .texto-mulheres p {
-    margin: 10px;
-  }
+.texto-mulheres img{
+  width: 25%;
+  margin: 0;
+  padding: 15px;
+
+}
+
+.texto-mulheres p{
+  width: 40%;
+  padding-right: 25px;
+}
 
   /* Filtro */
   .projetos-filtro {
@@ -593,24 +617,24 @@ hr{
   margin: 0 0 30px 0;
   flex: auto;
 }
-  /* Rodapé */
-  .container-footer {
-    flex-direction: column;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
 
-  .footer-img {
-    width: 50%;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-text {
-    flex-direction: column;
-    gap: 5px;
-  }
+.container-footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
+.footer-img{
+  width: 40%;
+  padding: 25px;
+}
+
+.footer-text p{
+  font-size: 20px;
+}
+.footer-text a{
+  font-size: 20px;
+}
+}

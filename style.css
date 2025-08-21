@@ -156,7 +156,7 @@ footer {
 }
 hr{
   width: 95%;
-  color: #333;
+  color:dimgray;
 }
 
 .container-footer{
@@ -356,7 +356,7 @@ hr{
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 30s linear infinite;
   width: max-content;
 }
 
@@ -568,26 +568,24 @@ hr{
 }
 .subtitulo-mulheres h3{
   padding: 0;
+  font-size: 45px;
 }
 
 .texto-mulheres{
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  margin-top: 40px;
-  padding: 0;
 }
 
 .texto-mulheres img{
-  width: 25%;
+  width: 30%;
   margin: 0;
-  padding: 15px;
-
 }
 
 .texto-mulheres p{
-  width: 40%;
-  padding-right: 25px;
+  width: 100%;
 }
 
   /* Filtro */
@@ -627,8 +625,13 @@ hr{
 }
 
 .footer-img{
-  width: 40%;
+  width: 60%;
   padding: 25px;
+}
+
+.footer-text{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-text p{
@@ -637,4 +640,5 @@ hr{
 .footer-text a{
   font-size: 20px;
 }
+
 }

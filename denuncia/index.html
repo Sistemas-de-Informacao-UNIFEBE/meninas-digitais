@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Denúncia Anônima</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+     <header>
+    <!-- barra de navegação -->
+    <nav>
+      <div class="nav-logo">
+        <a href="index.html"><img src="../assets/images/logo_variação_1_horizontal.png" alt="Logo" width="180px"
+            id="logo" /></a>
+      </div>
+      <div class="nav-links" id="desktop-menu">
+        <a href="../index.html">Home</a>
+        <a href="../projetos.html">Projetos e Pesquisas</a>
+        <a href="../mulheres.html">Mulheres brilhantes</a>
+      </div>
+      <!-- Botão hambúrguer -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Links -->
+      <div class="nav-links" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="projetos.html">Projetos e Pesquisas</a>
+        <a href="mulheres.html">Mulheres Brilhantes</a>
+      </div>
+    </nav>
+  </header>
+
+<main>
+    <div class="formDenuncia">
+  <form id="formDenuncia" method="POST" action="enviar.php">
+    <h2>Denúncia Anônima</h2>
+    <label>Nome (opcional)</label>
+    <input type="text" name="nome">
+
+    <label>Telefone (opcional)</label>
+    <input type="text" name="telefone">
+
+    <label>Descreva o ocorrido *</label>
+    <textarea name="descricao" required></textarea>
+
+    <div class="button">
+    <button type="submit">Enviar Denúncia</button>
+    </div>
+  </form>
+    </div>
+
+</main>
+
+  <footer>
+    <div class="linha">
+      <hr>
+      </hr>
+    </div>
+    <section class="container-footer">
+      <!--Rodapé da página das meninas digitais--><!-- banner inicial -->
+      <div class="../footer-img">
+        <img src="../assets/images/logo_variação_1_horizontal.png" alt="Logo" width="180px" id="logo" />
+      </div>
+      <div class="footer-text">
+        <img src="../assets/images/mail.svg" alt="mail">
+        <a href="mailto: meninasdigitais@unifebe.edu.br">meninasdigitais@unifebe.edu.br</a>
+        <p>© 2025 Todos os direitos reservados</p>
+      </div>
+    </section>
+  </footer>
+
+</body>
+</html>

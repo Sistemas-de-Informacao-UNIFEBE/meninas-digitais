@@ -41,17 +41,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <meta charset="UTF-8">
 <title>Login - Admin</title>
-<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
   <div class="formDenuncia">
-  <form method="POST">
+    <form method="POST">
 
-    <h3 class="titulo-denuncia">Login Admin</h3>
+    <h3 class="titulo-denuncia">Login</h3>
 
     <input type="text" name="usuario" placeholder="Usuário" required>
     <input type="password" name="senha" placeholder="Senha" required>
+    <div class = "botao-denuncia">
     <button type="submit">Entrar</button>
+</div>
     <?php if(isset($erro)) echo "<p style='color:red'>$erro</p>"; ?>
   </form>
 </div>

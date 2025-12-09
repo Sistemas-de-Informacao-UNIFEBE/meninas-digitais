@@ -26,11 +26,12 @@ a { text-decoration: none; color: #333; }
   <h2>Painel Administrativo</h2>
   <a href="logout.php" class="logout">Sair</a>
   <table>
-    <tr><th>ID</th><th>Nome</th><th>Telefone</th><th>Descrição</th><th>Data</th></tr>
+    <tr><th>ID</th><th>Nome</th><th>Email</th><th>Telefone</th><th>Descrição</th><th>Data</th></tr>
     <?php while($row = $result->fetch_assoc()): ?>
       <tr>
         <td><?= $row['id'] ?></td>
         <td><?= $row['nome'] ?: '<i>Anônimo</i>' ?></td>
+        <td><?= $row['email'] ?: '<i>Não informado</i>' ?></td>
         <td><?= $row['telefone'] ?: '<i>Não informado</i>' ?></td>
         <td><?= nl2br(htmlspecialchars($row['descricao'])) ?></td>
         <td><?= $row['data_envio'] ?></td>

@@ -15,7 +15,7 @@ function enviar_notificacao_admin_smtp($detalhes_denuncia) {
     try {
 
         $mail->CharSet = 'UTF-8';
-        
+
         $mail->isSMTP();                                       
         $mail->Host       = 'smtp.gmail.com';           
         $mail->SMTPAuth   = true;                              
@@ -38,7 +38,8 @@ function enviar_notificacao_admin_smtp($detalhes_denuncia) {
                 <p>Uma nova denúncia anônima foi registrada no sistema. Por favor, analise o mais rápido possível.</p>
                 <div style='border: 1px solid #ccc; padding: 15px; border-radius: 5px; background-color: #f9f9f9;'>
                     <p><strong>Data/Hora:</strong> " . date('d/m/Y H:i:s') . "</p>
-                    <p><strong>Usuário (Opcional):</strong> " . ($detalhes_denuncia['nome'] ?? 'Não informado') . "</p>
+                    <p><strong>Nome (Opcional):</strong> " . ($detalhes_denuncia['nome'] ?? 'Não informado') . "</p>
+                    <p><strong>Email (Opcional):</strong> " . ($detalhes_denuncia['email'] ?? 'Não informado') . "</p>
                     <p><strong>Telefone (Opcional):</strong> " . ($detalhes_denuncia['telefone'] ?? 'Não informado') . "</p>
                     <hr>
                     <p><strong>Descrição do Relato:</strong></p>

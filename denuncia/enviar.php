@@ -3,6 +3,7 @@ include("db.php");
 include("enviar-email.php"); 
 
 $nome = !empty($_POST['nome']) ? $_POST['nome'] : null;
+$email = !empty($_POST['email']) ? $_POST['email'] : null;
 $telefone = !empty($_POST['telefone']) ? $_POST['telefone'] : null;
 $descricao = $_POST['descricao'] ?? ''; 
 
@@ -11,13 +12,14 @@ if (empty($descricao)) {
     exit;
 }
 
-$stmt = $conn->prepare("INSERT INTO denuncias (nome, telefone, descricao) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $nome, $telefone, $descricao); 
+$stmt = $conn->prepare("INSERT INTO denuncias (nome,email, telefone, descricao) VALUES (?, ?, ? , ?)");
+$stmt->bind_param("ssss", $nome, $email, $telefone, $descricao); 
 
 if ($stmt->execute()) {
     
     $dados_para_email = [
         'nome' => $nome,
+        'email' => $email,
         'telefone' => $telefone,
         'descricao' => $descricao 
     ];

@@ -5,14 +5,7 @@ $pass = "";     // coloque aqui a senha do MySQL (se houver)
 $dbname = "denuncias_db";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
-
-<<<<<<< HEAD
-if ($conn->connect_error) {
-    die("❌ Erro de conexão: " . $conn->connect_error);
-}
-
-echo "✅ Conexão bem-sucedida com o banco: " . $dbname;
-=======
+{
     // 1. Prepara e executa a consulta para buscar o hash da senha, filtrando apenas pelo usuário.
     $stmt = $conn->prepare("SELECT senha FROM admin WHERE usuario = ?");
     $stmt->bind_param("s", $usuario);
@@ -41,7 +34,6 @@ echo "✅ Conexão bem-sucedida com o banco: " . $dbname;
     $stmt->close();
 }
 // O restante do HTML permanece o mesmo
->>>>>>> 6aac6c0f8f4e853b3b05afb617055c390b62438a
 ?>
 
 

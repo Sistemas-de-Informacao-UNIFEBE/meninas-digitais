@@ -37,17 +37,26 @@
 <main>
     <div class="formDenuncia">
   <form id="formDenuncia" method="POST" action="enviar.php">
+    <div class="titulo-denuncia">
     <h2>Denúncia Anônima</h2>
+    </div>
+    <p class="texto-denuncia">Seja bem-vinda(o). Este é um espaço seguro e confidencial, criado para ouvir a sua voz.
+      Nosso compromisso é com o seu bem-estar e a integridade de todas. Queremos que você se sinta à vontade para relatar o ocorrido.
+      Abaixo, você encontrará o campo "Descreva o ocorrido". Por favor, utilize este espaço para detalhar a situação com o máximo de informações possível. Quanto mais detalhes você nos fornecer, mais rápido e eficazmente poderemos agir.
+      Seu Nome e Telefone são campos opcionais, e o anonimato da sua denúncia é totalmente garantido.</p>
     <label>Nome (opcional)</label>
     <input type="text" name="nome">
 
     <label>Telefone (opcional)</label>
     <input type="text" name="telefone">
 
+    <label>Email (opcional)</label>
+    <input type="text" name="email">
+
     <label>Descreva o ocorrido *</label>
     <textarea name="descricao" required></textarea>
 
-    <div class="button">
+    <div class="botao-denuncia">
     <button type="submit">Enviar Denúncia</button>
     </div>
   </form>

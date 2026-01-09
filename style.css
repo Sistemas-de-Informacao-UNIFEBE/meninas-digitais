@@ -1,5 +1,7 @@
-:root{
-  --azul-marinho:#004AAD;
+:root {
+  --azul-marinho: #004AAD;
+  --azul-claro: #a6dced;
+  --azul-ceu: #87cefa;
   --rosa-pink: #ef6f82;
   --rosa-claro: #ffdee9;
 }
@@ -20,11 +22,11 @@ html {
 /* Define o fundo da página e a fonte usada no body*/
 body {
   background: #f5f5f5;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #222;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,9 +36,10 @@ header{
   z-index: 1000;
 }
 
-main{
-  margin-top: 8vh; 
+main {
+  margin-top: 8vh;
 }
+
 /* Barra de navegação */
 nav {
   width: 100%;
@@ -49,24 +52,26 @@ nav {
   align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
   width: 50%;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
-.nav-logo img{
+
+.nav-logo img {
   width: 40%;
   height: auto;
   padding: 0 0 0 25px;
 }
+
 /* Links da barra de navegação */
 .nav-links {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.nav-links a{
-  color: #1d4f91; 
+.nav-links a {
+  color: #1d4f91;
   text-decoration: none;
   margin-left: 10px;
   padding: 0 20px 0 20px;
@@ -93,12 +98,13 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
-#mobile-menu{
+#mobile-menu {
   display: none;
 }
 
 .hamburger {
-  display: none; /* escondido no desktop */
+  display: none;
+  /* escondido no desktop */
   flex-direction: column;
   justify-content: space-between;
   width: 25px;
@@ -121,14 +127,16 @@ nav a::after {
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-.foto-meninas{
+.foto-meninas {
   width: 100%;
   height: 70vh;
   overflow: hidden;
@@ -137,11 +145,11 @@ nav a::after {
 
 }
 
-.foto-meninas img{
+.foto-meninas img {
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  filter: brightness(0.9s); 
+  filter: brightness(0.9s);
   transition: transform 8s ease;
 }
 
@@ -153,12 +161,14 @@ nav a::after {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 75%,  /* 75% sem nada */
-    rgba(255, 255, 255, 0.04) 90%,  /* leve toque de branco */
-    rgba(255, 255, 255, 0.08) 100%  /* final bem sutil */
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 75%,
+      /* 75% sem nada */
+      rgba(255, 255, 255, 0.04) 90%,
+      /* leve toque de branco */
+      rgba(255, 255, 255, 0.08) 100%
+      /* final bem sutil */
+    );
 }
 
 /* Adicionando espaçamento interno aos textos */
@@ -169,10 +179,11 @@ nav a::after {
 /* Adicionando espaçamento interno diferenciado para a descrição */
 #descricao1 {
   padding: 12px;
-  text-align: justify; /*Texto justificado do título que nós somos*/
+  text-align: justify;
+  /*Texto justificado do título que nós somos*/
 }
 
-.container-descricao{
+.container-descricao {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -211,18 +222,20 @@ footer {
   text-align: center;
   margin-top: 0;
 }
-.linha{
+
+.linha {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 0 10px 0;
 }
-hr{
+
+hr {
   width: 95%;
-  color:dimgray;
+  color: dimgray;
 }
 
-.container-footer{
+.container-footer {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -237,9 +250,9 @@ hr{
 .footer-img img {
   width: 100%;
   height: auto;
-} 
+}
 
-.footer-text{
+.footer-text {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -251,13 +264,14 @@ hr{
   color: #333;
   padding: 0 15px 0 15px;
 }
+
 .footer-text a {
   color: #333;
   text-decoration: none;
   text-align: center;
 }
 
-.footer-text img{
+.footer-text img {
   padding: 0 15px 0 15px;
 }
 
@@ -265,6 +279,7 @@ hr{
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-40%);
   }
@@ -317,7 +332,7 @@ hr{
   margin: 15px;
 }
 
-.card-titulo p{
+.card-titulo p {
   padding: 20px 0 20px 100px;
 }
 
@@ -329,13 +344,13 @@ hr{
   font-size: 12px;
 }
 
-.projetos-filtro{
+.projetos-filtro {
   display: flex;
   justify-content: flex-start;
   margin: 100px 20px 0px 20px;
 }
 
-.projetos-filtro select{
+.projetos-filtro select {
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -343,43 +358,44 @@ hr{
   font-size: 18px;
 }
 
-.projetos-filtro img{
+.projetos-filtro img {
   padding: 0 10px 0 30px;
 
 }
 
 /*mulheres inspiradoras*/
-.section-mulheres{
+.section-mulheres {
   background-color: var(--rosa-pink);
   margin: 70px 0 0 0;
 }
 
-.titulo-mulheres{
+.titulo-mulheres {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   padding: 20px 0 20px 0;
- color: var(--rosa-claro);
+  color: var(--rosa-claro);
 }
 
-.titulo-mulheres h3{
+.titulo-mulheres h3 {
   font-size: 30px;
   font-weight: 100;
 }
-.titulo-mulheres p{
+
+.titulo-mulheres p {
   font-size: 20px;
   font-weight: 500;
 }
 
-.container-mulheres{
+.container-mulheres {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px 0 20px 0;
 }
 
-.card-mulheres{
+.card-mulheres {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -388,17 +404,17 @@ hr{
   border-radius: 5px;
   padding: 15px 0px 15px 0px;
   margin: 20px 5px 20px 10px;
-  width: 250px; 
+  width: 250px;
   flex-shrink: 0;
 }
 
-.card-mulheres img{
+.card-mulheres img {
   border-radius: 100%;
   width: 60%;
   height: auto;
 }
 
-.card-mulheres-text{
+.card-mulheres-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -406,7 +422,7 @@ hr{
   padding: 15px 0 15px 0;
 }
 
-.card-mulheres-text p{
+.card-mulheres-text p {
   font-weight: 500;
   color: var(--rosa-claro);
 }
@@ -423,12 +439,12 @@ hr{
   width: max-content;
 }
 
-.button{
+.button {
   display: flex;
   justify-content: center;
 }
 
-.button a{
+.button a {
   color: var(--rosa-pink);
   background-color: var(--rosa-claro);
   padding: 10px 20px;
@@ -444,7 +460,7 @@ hr{
   transition: background-color 0.3s, color 0.3s;
 }
 
-.titulo-mulheres2{
+.titulo-mulheres2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -455,21 +471,21 @@ hr{
   margin: 10px 0 30px 0;
 }
 
-.titulo-mulheres2 h2{
+.titulo-mulheres2 h2 {
   font-size: 45px;
   font-weight: 100;
 }
 
-.titulo-mulheres2 p{
+.titulo-mulheres2 p {
   font-size: 30px;
   font-weight: 500;
 }
 
-.container-mulheres2{
+.container-mulheres2 {
   margin: 0 0 50px 0;
 }
 
-.subtitulo-mulheres h3{
+.subtitulo-mulheres h3 {
   font-weight: 100;
   font-family: "Sacramento", cursive;
   padding: 10px 0 15px 190px;
@@ -478,21 +494,21 @@ hr{
 
 }
 
-.texto-mulheres{
+.texto-mulheres {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 0 200px 0 200px;
 }
 
-.texto-mulheres img{
+.texto-mulheres img {
   flex: 0 0 200px;
   border-radius: 100%;
   width: 10%;
 
 }
 
-.texto-mulheres p{
+.texto-mulheres p {
   text-align: justify;
   padding: 20px 0 0 20px;
   font-size: 18px;
@@ -501,14 +517,14 @@ hr{
 }
 
 .card-mulheres {
-  width: 250px; 
-  flex-shrink: 0; 
+  width: 250px;
+  flex-shrink: 0;
 }
 
 /*Página de Sobre as mulheres*/
 
-.titulo-mulheres2{
-  display:flex;
+.titulo-mulheres2 {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -516,16 +532,16 @@ hr{
   color: var(--azul-marinho);
 }
 
-.titulo-mulheres2 h3{
+.titulo-mulheres2 h3 {
   font-size: 30px;
   font-weight: 200;
 }
 
-.titulo-mulheres2 p{
+.titulo-mulheres2 p {
   font-size: 20px;
 }
 
-.text-mulheres img{
+.text-mulheres img {
   border-radius: 100%;
   width: 10%;
   display: flex;
@@ -537,43 +553,91 @@ hr{
 
 .formDenuncia {
   margin-top: 14vh;
-  font-family: Arial, sans-serif;
   background: #f5f5f5;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+}
+
+.texto-denuncia {
+  text-align: justify;
+  padding: 0 0 25px 0;
+  font-size: 1.05em;
+  line-height: 1.4;
+  color: #444;
 }
 
 form {
   background: white;
   padding: 60px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  max-width: 70vh; 
-  width: 90%; 
-  margin: 20px auto; 
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08), 0 0 5px rgba(0, 0, 0, 0.05);
+  max-width: 70vh;
+  width: 90%;
+  margin: 20px auto;
 }
 
-input, textarea, button {
+input,
+textarea {
   width: 100%;
   margin-top: 10px;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
 }
+
+input:focus,
+textarea:focus {
+  border-color: var(--azul-marinho);
+  box-shadow: 0 0 0 3px rgba(0, 100, 150, 0.1);
+  outline: none;
+}
+
+.botao-denuncia {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0 0;
+
+}
+
+button[type="submit"] {
+  background-color: var(--azul-claro);
+  color: var(--azul-marinho);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--azul-ceu);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-denuncia {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px 0;
+}
+
 
 /* Ajustes apenas para celular */
 @media (max-width: 768px) {
 
-  main{
-  margin-top: 6vh; 
-}
+  main {
+    margin-top: 6vh;
+  }
 
   /* Menu de navegação em coluna */
   nav {
     align-items: center;
     padding: 10px 0;
-    box-shadow: none; /* sombra mais leve ou removida */
+    box-shadow: none;
+    /* sombra mais leve ou removida */
   }
 
   .nav-logo {
@@ -583,7 +647,8 @@ input, textarea, button {
   }
 
   .nav-logo img {
-    width: 70%; /* maior destaque do logo */
+    width: 70%;
+    /* maior destaque do logo */
     padding: 0;
   }
 
@@ -593,48 +658,48 @@ input, textarea, button {
     display: flex;
   }
 
-#desktop-menu{
-  display: none;
-}
+  #desktop-menu {
+    display: none;
+  }
 
-#mobile-menu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  text-align: right;
-  top: 60px;
-  right: 20px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
+  #mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
 
-#mobile-menu a:hover{
-  background-color: #dcdcdc;
-  border-radius: 8px;
-}
+  #mobile-menu a:hover {
+    background-color: #dcdcdc;
+    border-radius: 8px;
+  }
 
   #mobile-menu.active {
     display: flex;
   }
 
-  .foto-meninas{
-  width: 100%;
-  height:40vh;
-  overflow: hidden;
-  position: relative;
-  background: url('assets/foto-meninas.jpg') center / cover no-repeat fixed;
+  .foto-meninas {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    background: url('assets/foto-meninas.jpg') center / cover no-repeat fixed;
 
-}
+  }
 
-.foto-meninas img{
-  width: 100%;
-  height: 40vh;
-  object-fit: cover;
-  filter: brightness(0.9s); 
-  transition: transform 8s ease;
-}
+  .foto-meninas img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(0.9s);
+    transition: transform 8s ease;
+  }
 
   /* Descrição */
   .container-descricao {
@@ -643,7 +708,7 @@ input, textarea, button {
 
   }
 
-  .secao-dados{
+  .secao-dados {
     width: 85%;
   }
 
@@ -655,7 +720,7 @@ input, textarea, button {
   .projetos-filtro {
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px;
+    padding: 10px;
   }
 
   .projetos-filtro img {
@@ -672,38 +737,41 @@ input, textarea, button {
     width: 7%;
     margin: 10px 10px 0 0;
   }
-.titulo-mulheres2 p{
-  font-size: 50px;
-}
+
+  .titulo-mulheres2 p {
+    font-size: 50px;
+  }
+
   /* Texto mulheres */
-.subtitulo-mulheres{
-  display: flex;
-  justify-content: center;
-}
-.subtitulo-mulheres h3{
-  padding: 0;
-  font-size: 30px;
-}
+  .subtitulo-mulheres {
+    display: flex;
+    justify-content: center;
+  }
 
-.texto-mulheres{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
+  .subtitulo-mulheres h3 {
+    padding: 0;
+    font-size: 30px;
+  }
 
-.texto-mulheres img{
-  width: 30%;
-  margin: 0;
-  padding: 20px;
-}
+  .texto-mulheres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 
-.texto-mulheres p{
-  width: 80%;
-  padding: 20px;
+  .texto-mulheres img {
+    width: 30%;
+    margin: 0;
+    padding: 20px;
+  }
 
-}
+  .texto-mulheres p {
+    width: 80%;
+    padding: 20px;
+
+  }
 
   /* Filtro */
   .projetos-filtro {
@@ -713,49 +781,50 @@ input, textarea, button {
   }
 
   .projetos-filtro img {
-    padding: 0 5px 5px ;
+    padding: 0 5px 5px;
   }
-  
-  .titulo-mulheres2 h2{
+
+  .titulo-mulheres2 h2 {
     font-size: 30px;
   }
 
-  .titulo-mulheres2 p{
+  .titulo-mulheres2 p {
     font-size: 15px;
   }
 
-  .container-mulheres2{
-  margin: 0 0 10px 0;
-}
+  .container-mulheres2 {
+    margin: 0 0 10px 0;
+  }
 
-.texto-mulheres p{
-  margin: 0 0 30px 0;
-  flex: auto;
-}
+  .texto-mulheres p {
+    margin: 0 0 30px 0;
+    flex: auto;
+  }
 
-.container-footer{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-}
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
 
-.footer-img{
-  width: 60%;
-  padding: 25px;
-}
+  .footer-img {
+    width: 60%;
+    padding: 25px;
+  }
 
-.footer-text{
-  display: flex;
-  flex-direction: column;
-}
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+  }
 
-.footer-text p{
-  font-size: 20px;
-}
-.footer-text a{
-  font-size: 20px;
-}
+  .footer-text p {
+    font-size: 20px;
+  }
+
+  .footer-text a {
+    font-size: 20px;
+  }
 
 }

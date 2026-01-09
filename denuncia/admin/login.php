@@ -1,25 +1,18 @@
 <?php
-session_start();
-include("../db.php");
+$host = "localhost";
+$user = "root"; // o mesmo usuário que você usa no HeidiSQL
+$pass = "";     // coloque aqui a senha do MySQL (se houver)
+$dbname = "denuncias_db";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
+$conn = new mysqli($host, $user, $pass, $dbname);
 
-    $stmt = $conn->prepare("SELECT * FROM admin WHERE usuario = ? AND senha = SHA2(?, 256)");
-    $stmt->bind_param("ss", $usuario, $senha);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows === 1) {
-        $_SESSION['admin'] = $usuario;
-        header("Location: painel.php");
-        exit;
-    } else {
-        $erro = "Usuário ou senha inválidos!";
-    }
+if ($conn->connect_error) {
+    die("❌ Erro de conexão: " . $conn->connect_error);
 }
+
+echo "✅ Conexão bem-sucedida com o banco: " . $dbname;
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
